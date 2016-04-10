@@ -10,7 +10,7 @@ fulldata <- read.table(filepath, sep=";", stringsAsFactors=FALSE, header=TRUE)
 ## Convert the date to the proper format
 fulldata$Date <- as.Date(fulldata$Date , format = "%d/%m/%Y")
 
-## Only take data between the dates 01/02/2007 - 03/02/2007
+## Only take data between the dates 01/02/2007 - 02/02/2007
 electric <- fulldata[fulldata$Date >= "2007-02-01" & fulldata$Date <= "2007-02-02",]
 
 ## Create a new field combining the date and time called "DateTime
