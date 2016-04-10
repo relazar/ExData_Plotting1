@@ -28,7 +28,7 @@ electric$Sub_metering_3 <- as.numeric(electric$Sub_metering_3)
 ################################## Plot 2###########################################
 
 ## Plot line graph
-plot(electric$DateTime,electric$Global_active_power,type="l",ylab="Global Active Power",xlab="")
+plot(electric$DateTime,electric$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
 
 ## copy to a png file
 dev.copy(png, file = "plot2.png")
